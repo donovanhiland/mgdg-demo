@@ -1,0 +1,18 @@
+overwrite: true
+schema: [./src/schema.ts]
+documents:
+  - src/**/*.{ts,tsx}
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+generates:
+  ./src/api.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+    config:
+      nonOptionalTypename: true
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      transformUnderscore: true

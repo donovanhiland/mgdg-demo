@@ -1,0 +1,25 @@
+{
+  "name": "mgdg-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only index.ts",
+    "generate": "graphql-codegen"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.17.6",
+    "@graphql-codegen/typescript": "^1.17.6",
+    "@graphql-codegen/typescript-operations": "^1.17.6",
+    "@types/faker": "^4.1.12",
+    "prettier": "^2.0.5",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "mgdg": "^1.0.1"
+  }
+}
